@@ -1,0 +1,30 @@
+<div class="container">
+    <p>test works welcome!:{{getDetails()}}</p>
+    <p>hi friends:I am {{name}}</p>
+    {{4+4}}
+    <h2 [innerText]="title"></h2>
+    <p [innerText]="injectionText"></p>
+    <p [style.color]="color">hi</p>
+    <!-- event binding -->
+    <h3>count value:{{count}}</h3>
+    <button (click)="click()">click me</button>
+
+    <button (click)="clickr()">click me to reduce</button>
+    <br>
+    <!-- Event payload =>$ -->
+    <input (input)="getValue($event)">
+    <p>Event payload:{{value}}</p>
+    <!-- template reference  -->
+    <input #val (input)="getValue1(val)">
+    <p>Event payload:{{value1}}</p>
+
+
+
+    <!-- key events filtering -->
+    <input (keyup.enter)="value2=$any($event.target).value">
+    <p>keyup:{{value2}}</p>
+
+    <!-- two way binding  -->
+    <input type="text" name="value" [(ngModel)]="Two-way Binding"></div>
+<p>two -way binding:{{value3}}</p>
+<button (click)="clear()">Clear value</button>
