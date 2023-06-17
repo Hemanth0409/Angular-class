@@ -48,4 +48,6 @@ value3=''
 clear(){
   this.value3=''
 }
+//custome pipe
+numberval=10
 }

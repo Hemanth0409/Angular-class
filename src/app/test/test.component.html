@@ -25,6 +25,10 @@
     <p>keyup:{{value2}}</p>
 
     <!-- two way binding  -->
-    <input type="text" name="value" [(ngModel)]="Two-way Binding"></div>
+    <input type="text" name="value" [(ngModel)]="value3"></div>
 <p>two -way binding:{{value3}}</p>
 <button (click)="clear()">Clear value</button>
+
+<!-- custom pipe -->
+custome Pipe:{{numberval}}<br> custome Pipe:{{numberval|customPIPE}}
+<hr>

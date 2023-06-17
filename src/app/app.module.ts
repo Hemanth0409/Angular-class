@@ -1,26 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
-import {Component} from '@angular/core';
-import {NgForm} from '@angular/forms';
+
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
-import{FormsModule,}
+import { CustomPIPEPipe } from './custom-pipe.pipe';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    TestComponent,
+    CustomPIPEPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ButtonModule,
     SidebarModule,
-    NgForm,
-    Component
+
+    FormsModule
  
   ],
   providers: [],
